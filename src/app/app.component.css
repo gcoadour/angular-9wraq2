@@ -1,0 +1,46 @@
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 3px;
+  max-width: 793px;
+  height: 16px;
+  
+}
+
+.hourly_timeline .signal-area {
+  border-radius: 4px;
+}
+.hourly_timeline .signal-area {
+  min-height: 16px;
+  min-width: 10.48px;
+  max-width: 25.96px;
+  height: 24px;
+}
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.hourly_timeline .signal-area:nth-child(4n + 2) .text-signal-area,
+.hourly_timeline .signal-area:nth-child(4n + 3) .text-signal-area,
+.hourly_timeline .signal-area:nth-child(4n + 4) .text-signal-area {
+  display: none;
+}
+
+.hourly_timeline .signal-area:not(:last-child) .text-signal-area {
+  left: -8px;
+}
+.hourly_timeline .signal-area .text-signal-area {
+  top: 30px;
+}
+.absolute {
+  position: relative;
+}
+.text-12 {
+  font-size: 12px;
+}
+
+
