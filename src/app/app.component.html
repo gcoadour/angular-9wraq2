@@ -1,10 +1,14 @@
 <div class="hourly_timeline">
   <div class="flex">
     <div
-      *ngFor="let hourColor of hoursColor; let index = index"
+      *ngFor="let value of values; let index = index"
       [ngStyle]="{
         'background-color':
-          hourColor == 1 ? '#519e30' : hourColor == 2 ? '#ffa02f' : '#f6201b'
+          value.hvalue == 1
+            ? '#519e30'
+            : value.hvalue == 2
+            ? '#ffa02f'
+            : '#f6201b'
       }"
       class="flex-1 signal-area relative border-t border-b data-hour-0 signal-1"
     >
