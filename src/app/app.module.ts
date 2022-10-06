@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { EnergySobrietyModule } from './energy-sobriety/energy-sobriety.module';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, EnergySobrietyModule],
   declarations: [AppComponent],
   bootstrap: [AppComponent],
 })

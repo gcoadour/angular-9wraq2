@@ -6,8 +6,13 @@ import { EnergySobrietyDaysComponent } from './energy-sobriety-days/energy-sobri
 import { EnergySobrietyDetailsModule } from './energy-sobriety-details/energy-sobriety-details.module';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, EnergySobrietyDetailsModule],
-  declarations: [EnergySobrietyComponent, EnergySobrietyDaysComponent],
-  bootstrap: [EnergySobrietyComponent, EnergySobrietyDaysComponent],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    EnergySobrietyDetailsModule,
+  ],
+  declarations: [EnergySobrietyComponent,EnergySobrietyDaysComponent],
+  bootstrap: [EnergySobrietyComponent],
+  exports: [EnergySobrietyComponent],
 })
 export class EnergySobrietyModule {}

@@ -17,5 +17,6 @@ import { EnergySobrietyDetailsComponent } from './energy-sobriety-details.compon
     DescriptionComponent,
     HourlyTimelineComponent,
   ],
+  exports: [EnergySobrietyDetailsComponent],
 })
 export class EnergySobrietyDetailsModule {}
