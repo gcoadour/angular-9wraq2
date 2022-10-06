@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'energy-sobriety-days',
   templateUrl: './energy-sobriety-days.component.html',
   styleUrls: ['./energy-sobriety-days.component.css'],
 })
-export class EnergySobrietyDaysComponent {}
+export class EnergySobrietyDaysComponent {
+  @Input() daysValues: any;
+}
