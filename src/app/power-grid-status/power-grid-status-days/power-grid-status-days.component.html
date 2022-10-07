@@ -1,3 +1,10 @@
-<button *ngFor="let value of daysValues" (click)="selectDay(value)">
-  {{ value.jour | date: 'dd/MM/yyyy' }} {{ value.dvalue }}
+<button
+  *ngFor="let value of daysValues"
+  (click)="selectDay(value)"
+  [ngStyle]="{
+    'background-color':
+      value.dvalue == 1 ? '#519e30' : value.dvalue == 2 ? '#ffa02f' : '#f6201b'
+  }"
+>
+  {{ value.jour | date: 'dd/MM/yyyy' }}
 </button>
