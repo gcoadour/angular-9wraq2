@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'energy-sobriety',
-  templateUrl: './energy-sobriety.component.html',
-  styleUrls: ['./energy-sobriety.component.css'],
+  selector: 'power-grid-status',
+  templateUrl: './power-grid-status.component.html',
+  styleUrls: ['./power-grid-status.component.css'],
 })
-export class EnergySobrietyComponent {
-  public detailsValues: any;
-  public daysValues: any;
-
-  signals = [
+export class PowerGridStatusComponent {
+  detailsValues: any;
+  changeSelectedDay(selectedDay: any) {
+    this.detailsValues = selectedDay;
+  }
+  daysValues: any = [
     {
       GenerationFichier: '2022-06-03T07:36:25+02:00',
       jour: '2022-06-06T00:00:00+02:00',

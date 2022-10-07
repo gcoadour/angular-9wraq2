@@ -3,20 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { DescriptionComponent } from './description/description.component';
 import { HourlyTimelineComponent } from './hourly-timeline/hourly-timeline.component';
-import { EnergySobrietyDetailsComponent } from './energy-sobriety-details.component';
+import { PowerGridStatusDetailsComponent } from './power-grid-status-details.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
   declarations: [
-    EnergySobrietyDetailsComponent,
+    PowerGridStatusDetailsComponent,
     DescriptionComponent,
     HourlyTimelineComponent,
   ],
   bootstrap: [
-    EnergySobrietyDetailsComponent,
+    PowerGridStatusDetailsComponent,
     DescriptionComponent,
     HourlyTimelineComponent,
   ],
-  exports: [EnergySobrietyDetailsComponent],
+  exports: [PowerGridStatusDetailsComponent],
 })
-export class EnergySobrietyDetailsModule {}
+export class PowerGridStatusDetailsModule {}
