@@ -1,15 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'power-grid-status',
   templateUrl: './power-grid-status.component.html',
   styleUrls: ['./power-grid-status.component.css'],
 })
-export class PowerGridStatusComponent {
+export class PowerGridStatusComponent implements OnInit {
   detailsValues: any;
-  changeSelectedDay(selectedDay: any) {
-    this.detailsValues = selectedDay;
-  }
   daysValues: any = [
     {
       GenerationFichier: '2022-06-03T07:36:25+02:00',
@@ -587,4 +584,11 @@ export class PowerGridStatusComponent {
       ],
     },
   ];
+
+  ngOnInit(): void {
+    this.detailsValues = this.daysValues[0];
+  }
+  changeSelectedDay(selectedDay: any) {
+    this.detailsValues = selectedDay;
+  }
 }
