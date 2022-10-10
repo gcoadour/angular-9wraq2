@@ -2,9 +2,11 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-end;
   padding: 0px;
   gap: 3px;
+}
+.hourly_timeline {
+  margin-bottom: 34px;
 }
 
 .hourly_timeline .signal-area {
@@ -45,4 +47,26 @@
 }
 .text-12 {
   font-size: 12px;
+}
+
+.legendary {
+  display: flex;
+  justify-content: space-around;
+  .sub-legendary {
+    display: flex;
+    .rectangle {
+      width: 15px;
+      height: 15px;
+      border-radius: 30px;
+    }
+    .green {
+      background: #509e2f;
+    }
+    .orange {
+      background: #ffa02f;
+    }
+    .red {
+      background: #f61f1b;
+    }
+  }
 }
