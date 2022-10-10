@@ -1,0 +1,39 @@
+.description {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 10px;
+  gap: 10px;
+  height: 117px;
+  align-items: center;
+}
+
+.description-title {
+  height: 21px;
+
+  /* Paragraphe-Bold */
+
+  font-family: 'EDF 2020';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21px;
+  /* GRAY/Grayscale-3 */
+
+  color: #262626;
+}
+.description-content {
+  height: 76px;
+
+  /* Paragraphe */
+
+  font-family: 'EDF 2020';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 19px;
+  /* or 112% */
+
+  /* GRAY/grayscale-2 */
+
+  color: #444244;
+}

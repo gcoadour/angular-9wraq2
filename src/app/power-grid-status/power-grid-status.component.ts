@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'power-grid-status',
   templateUrl: './power-grid-status.component.html',
-  styleUrls: ['./power-grid-status.component.css'],
+  styleUrls: ['./power-grid-status.component.scss'],
 })
 export class PowerGridStatusComponent implements OnInit {
   detailsValues: any;

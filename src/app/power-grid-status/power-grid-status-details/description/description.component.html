@@ -1,17 +1,29 @@
-<div *ngIf="dayStatus === 0">
-  Les informations pour le  ne sont pas disponibles. Veuillez
-  réessayer ultérieurement.
-</div>
-<div *ngIf="dayStatus === 1">
-  Consommation normale. La situation du réseau est stable. Les écogestes restent
-  bienvenus.
-</div>
-<div *ngIf="dayStatus === 2">
-  Système électrique tendu. Les écogestes sont les bienvenus afin de réduire la
-  tension du réseau et prévenir tout risque de coupures.
-</div>
-<div *ngIf="dayStatus === 3">
-  Système électrique très tendu. Réduisez au maximum vos usages pendant les
-  heures orange ou rouges ou différez-les sur des heures vertes afin de diminuer
-  les risques de coupures.
+<div>
+  <div class="description" *ngIf="dayStatus === 0">
+    <div class="description-title">
+      Les informations pour le ne sont pas disponibles.
+    </div>
+    <div class="description-content">Veuillez réessayer ultérieurement.</div>
+  </div>
+  <div class="description" *ngIf="dayStatus === 1">
+    <div class="description-title">Consommation normale.</div>
+    <div class="description-content">
+      La situation du réseau est stable. Les écogestes restent bienvenus.
+    </div>
+  </div>
+  <div class="description" *ngIf="dayStatus === 2">
+    <div class="description-title">Système électrique tendu.</div>
+    <div class="description-content">
+      Les écogestes sont les bienvenus afin de réduire la tension du réseau et
+      prévenir tout risque de coupures.
+    </div>
+  </div>
+  <div class="description" *ngIf="dayStatus === 3">
+    <div class="description-title">Système électrique très tendu.</div>
+    <div class="description-content">
+      Réduisez au maximum vos usages pendant les heures orange ou rouges ou
+      différez-les sur des heures vertes afin de diminuer les risques de
+      coupures.
+    </div>
+  </div>
 </div>

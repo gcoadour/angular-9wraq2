@@ -5,7 +5,6 @@
   align-items: flex-end;
   padding: 0px;
   gap: 3px;
-  max-width: 793px;
 }
 
 .hourly_timeline .signal-area {
@@ -25,6 +24,14 @@
 .hourly_timeline .signal-area:nth-child(4n + 3) .text-signal-area,
 .hourly_timeline .signal-area:nth-child(4n + 4) .text-signal-area {
   display: none;
+}
+
+.hourly_timeline .signal-area:last-child:after {
+  content: '24h';
+  right: -5px;
+  bottom: -25px;
+  position: relative;
+  font-size: 12px;
 }
 
 .hourly_timeline .signal-area:not(:last-child) .text-signal-area {
