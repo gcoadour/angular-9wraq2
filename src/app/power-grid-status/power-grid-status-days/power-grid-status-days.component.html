@@ -1,14 +1,17 @@
 <div class="days-button">
   <button
-    *ngFor="let value of daysValues"
+    *ngFor="let value of daysValues; let index = index"
     (click)="selectDay(value)"
+    [ngClass]="{ 'active': activeDay === index }"
     [ngStyle]="{
       'background-color':
         value.dvalue == 1
           ? '#519e30'
           : value.dvalue == 2
           ? '#ffa02f'
-          : '#f6201b'
+          : value.dvalue == 3
+          ? '#f6201b'
+          : '#CCCCCC'
     }"
   >
     {{ value.jour | date: 'dd/MM/yyyy' }}

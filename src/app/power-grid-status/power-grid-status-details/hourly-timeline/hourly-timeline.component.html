@@ -8,9 +8,11 @@
             ? '#519e30'
             : value.hvalue == 2
             ? '#ffa02f'
-            : '#f6201b'
+            : value.hvalue == 3
+            ? '#f6201b'
+            : '#CCCCCC'
       }"
-      class="flex-1 signal-area relative border-t border-b data-hour-0 signal-1"
+      class="flex-1 signal-area relative border-t border-b signal-1"
     >
       <div class="absolute text-12 text-signal-area">{{ index }}h</div>
     </div>

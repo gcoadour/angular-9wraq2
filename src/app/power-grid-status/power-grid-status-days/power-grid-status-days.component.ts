@@ -8,6 +8,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class PowerGridStatusDaysComponent {
   @Input() daysValues: any;
   @Output() selectedDay: EventEmitter<any> = new EventEmitter();
+  activeDay: number = 1;
   selectDay(values: any) {
     this.selectedDay.emit(values);
   }

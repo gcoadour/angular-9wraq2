@@ -475,111 +475,152 @@ export class PowerGridStatusComponent implements OnInit {
 
       jour: '2022-06-03T00:00:00+02:00',
 
-      dvalue: 3,
+      dvalue: 0,
 
       message: "Coupures d'électricité en cours",
 
       values: [
         {
+          pas: 0,
+
+          hvalue: 0,
+        },
+
+        {
+          pas: 1,
+
+          hvalue: 0,
+        },
+
+        {
+          pas: 2,
+
+          hvalue: 0,
+        },
+
+        {
+          pas: 3,
+
+          hvalue: 0,
+        },
+
+        {
+          pas: 4,
+
+          hvalue: 0,
+        },
+
+        {
+          pas: 5,
+
+          hvalue: 0,
+        },
+
+        {
+          pas: 6,
+
+          hvalue: 0,
+        },
+        {
           pas: 7,
 
-          hvalue: 3,
+          hvalue: 0,
         },
 
         {
           pas: 8,
 
-          hvalue: 3,
+          hvalue: 0,
         },
 
         {
           pas: 9,
 
-          hvalue: 1,
+          hvalue: 0,
         },
 
         {
           pas: 10,
 
-          hvalue: 1,
+          hvalue: 0,
         },
 
         {
           pas: 11,
 
-          hvalue: 1,
+          hvalue: 0,
         },
 
         {
           pas: 12,
 
-          hvalue: 1,
+          hvalue: 0,
         },
 
         {
           pas: 13,
 
-          hvalue: 1,
+          hvalue: 0,
         },
 
         {
           pas: 14,
 
-          hvalue: 3,
+          hvalue: 0,
         },
 
         {
           pas: 15,
 
-          hvalue: 3,
+          hvalue: 0,
         },
 
         {
           pas: 16,
 
-          hvalue: 3,
+          hvalue: 0,
         },
 
         {
           pas: 17,
 
-          hvalue: 3,
+          hvalue: 0,
         },
 
         {
           pas: 18,
 
-          hvalue: 3,
+          hvalue: 0,
         },
 
         {
           pas: 19,
 
-          hvalue: 3,
+          hvalue: 0,
         },
 
         {
           pas: 20,
 
-          hvalue: 3,
+          hvalue: 0,
         },
 
         {
           pas: 21,
 
-          hvalue: 2,
+          hvalue: 0,
         },
 
         {
           pas: 22,
 
-          hvalue: 2,
+          hvalue: 0,
         },
 
         {
           pas: 23,
 
-          hvalue: 2,
+          hvalue: 0,
         },
       ],
     },
