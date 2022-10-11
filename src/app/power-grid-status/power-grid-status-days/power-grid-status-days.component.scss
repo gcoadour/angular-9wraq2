@@ -1,4 +1,5 @@
 .days-button {
+  height: 100px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -7,7 +8,54 @@
   &::-webkit-scrollbar {
     display: none;
   }
-  .active {
-    background-color: aquamarine;
+  .bold {
+    font-weight: bold;
+    font-size: large;
+  }
+
+  .buttonDay {
+    margin-right: 2%;
+    flex: 0 0 100px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .manageColorNone {
+    background-color: white;
+    border: 1px solid #c2c2c2;
+  }
+
+  .manageColorOk {
+    background-color: white;
+    border: 1px solid #4e9a2d;
+  }
+
+  .manageColorWarning {
+    background-color: white;
+    border: 1px solid #ffa02f;
+  }
+  .manageColorStop {
+    background-color: white;
+    border: 1px solid #ff3017;
+  }
+
+  .manageColorNone :active {
+    background-color: #c2c2c2;
+  }
+
+  .manageColorOk :active {
+    background-color: #4e9a2d;
+  }
+
+  .manageColorWarning :active {
+    background-color: #ffa02f;
+  }
+
+  .manageColorStop :active {
+    background-color: #ff3017;
   }
 }

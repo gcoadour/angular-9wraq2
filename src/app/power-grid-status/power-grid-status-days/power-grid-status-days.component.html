@@ -2,18 +2,18 @@
   <button
     *ngFor="let value of daysValues; let index = index"
     (click)="selectDay(value)"
-    [ngClass]="{ 'active': activeDay === index }"
-    [ngStyle]="{
-      'background-color':
-        value.dvalue == 1
-          ? '#519e30'
-          : value.dvalue == 2
-          ? '#ffa02f'
-          : value.dvalue == 3
-          ? '#f6201b'
-          : '#CCCCCC'
-    }"
+    class="buttonDay"
+    [ngClass]="[
+      value.dvalue == 1
+        ? 'manageColorOk'
+        : value.dvalue == 2
+        ? 'manageColorWarning'
+        : value.dvalue == 3
+        ? 'manageColorStop'
+        : 'manageColorNone'
+    ]"
   >
-    {{ value.jour | date: 'dd/MM/yyyy' }}
+    <span class="bold">{{ value.jour | date: 'd ' }}</span>
+    <span>{{ value.jour | date: 'MMMM' }}</span>
   </button>
 </div>
